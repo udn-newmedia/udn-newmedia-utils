@@ -7,7 +7,7 @@ npm install udn-newmedia-utils
 ```
 
 ```js
-import Utils from 'udn-newmedia-utils
+import Utils from 'udn-newmedia-utils'
 ```
 
 # API
