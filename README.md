@@ -4,6 +4,9 @@ Udn NewMedia 常用共通 code
 # How to use
 ```
 npm install udn-newmedia-utils
+```
+
+```js
 import Utils from 'udn-newmedia-utils
 ```
 
