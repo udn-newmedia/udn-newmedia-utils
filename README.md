@@ -21,3 +21,6 @@ import Utils from 'udn-newmedia-utils'
 判斷目前使用者瀏覽器是否為 IE
 * true: IE
 * false: other
+
+### Utils.iOSVersion()
+判斷使用者ios 版本 主要for video auto play
