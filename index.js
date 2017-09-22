@@ -19,7 +19,7 @@ function iOSVersion(targetVersion) {
 	if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
 		// supports iOS 2.0 and later: <http://bit.ly/TJjs1V>
         var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-        if(parseInt(v[1] >= targetVersion)){
+        if(parseInt(v[1]) >= targetVersion){
             return true
         }
         else{
