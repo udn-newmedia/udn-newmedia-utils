@@ -15,12 +15,21 @@ function detectMob() {
     }
 }
 
-function iOSVersion() {
+function iOSVersion(targetVersion) {
 	if (/iP(hone|od|ad)/.test(navigator.userAgent)) {
 		// supports iOS 2.0 and later: <http://bit.ly/TJjs1V>
-		var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
-		return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
-	}
+        var v = (navigator.appVersion).match(/OS (\d+)_(\d+)_?(\d+)?/);
+        if(parseInt(v[1] >= targetVersion)){
+            return true
+        }
+        else{
+            return false
+        }
+		// return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
+    }
+    else{
+        return false
+    }
 }
 
 function detectIE() {
