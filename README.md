@@ -3,7 +3,7 @@ Udn NewMedia 常用共通 code
 
 # How to use
 ```bash
-npm install udn-newmedia-utils
+$ npm install udn-newmedia-utils
 ```
 
 ```js
