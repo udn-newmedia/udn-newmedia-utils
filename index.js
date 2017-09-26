@@ -1,5 +1,5 @@
 
-function detectMob() {
+function detectMob(retString=false) {
     if( navigator.userAgent.match(/Android/i)
         || navigator.userAgent.match(/webOS/i)
         || navigator.userAgent.match(/iPhone/i)
@@ -8,10 +8,20 @@ function detectMob() {
         || navigator.userAgent.match(/BlackBerry/i)
         || navigator.userAgent.match(/Windows Phone/i)
     ){
-        return true;
+        if(retString){
+            return 'Mob'
+        }
+        else{
+            return true;
+        }
     }
     else {
-        return false;
+        if(retString){
+            return 'PC'
+        }
+        else{
+            return false;
+        }
     }
 }
 
@@ -31,6 +41,8 @@ function iOSVersion(targetVersion) {
         return false
     }
 }
+
+function 
 
 function detectIE() {
     var ua = window.navigator.userAgent;
