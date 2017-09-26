@@ -48,6 +48,11 @@ function iOSVersion(targetVersion) {
     }
 }
 
+function isFacebookApp() {
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+}
+
 function detectIE() {
     var ua = window.navigator.userAgent;
   
@@ -92,5 +97,6 @@ module.exports = {
     detectMob : detectMob,
     detectPlatform: detectPlatform,
     detectIE : detectIE,
-    iOSVersion: iOSVersion
+    iOSVersion: iOSVersion,
+    isFacebookApp: isFacebookApp
 }
