@@ -42,8 +42,6 @@ function iOSVersion(targetVersion) {
     }
 }
 
-function 
-
 function detectIE() {
     var ua = window.navigator.userAgent;
   
