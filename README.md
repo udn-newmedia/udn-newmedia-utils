@@ -33,6 +33,6 @@ import Utils from 'udn-newmedia-utils'
 * false : 使用者版本 < 指定 version
 
 ### Utils.isFacebookApp(version)
-判斷是否為 FB app 是否低於version以下
-* true  : 是 FB app 低於 version
+判斷是否為 FB app 是否低於version(148)以下
+* true  : 是 FB app 低於 version(148)
 * false : 否
