@@ -1,6 +1,6 @@
 {
   "name": "udn-newmedia-utils",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Udn NewMedia utils js code",
   "main": "index.js",
   "scripts": {

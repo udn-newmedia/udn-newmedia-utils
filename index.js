@@ -52,6 +52,7 @@ function isFacebookApp(version) {
     var ua = navigator.userAgent || navigator.vendor || window.opera;
     // return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
     var findFBAV =ua.indexOf('FBAV/')
+    // ***FB IOS before version 148 have top position problem
     var FBversion_now = Number(ua.slice(findFBAV + 5, findFBAV + 8))
     if(FBversion_now < version){
         return true;
