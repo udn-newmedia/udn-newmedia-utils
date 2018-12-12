@@ -36,3 +36,8 @@ import Utils from 'udn-newmedia-utils'
 判斷是否為 FB app 是否低於version(148)以下
 * true  : 是 FB app 低於 version(148)
 * false : 否
+
+### Utils.isisLineApp()
+判斷是否為 LINE app 
+* true  : 是
+* false : 否
