@@ -61,6 +61,16 @@ function isFacebookApp(version) {
     }
 }
 
+function isLineApp() {
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    var line = ua.indexOf('Line/')
+
+    if(line > 0){
+        return true;
+    } else {
+        return false;
+    }
+}
 
 function detectIE() {
     var ua = window.navigator.userAgent;
@@ -107,5 +117,6 @@ module.exports = {
     detectPlatform: detectPlatform,
     detectIE : detectIE,
     iOSVersion: iOSVersion,
-    isFacebookApp: isFacebookApp
+    isFacebookApp: isFacebookApp,
+    isLineApp: isLineApp
 }
